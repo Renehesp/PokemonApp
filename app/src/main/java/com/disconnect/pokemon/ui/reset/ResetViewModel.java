@@ -1,16 +1,16 @@
-package com.disconnect.pokemon.ui.send;
+package com.disconnect.pokemon.ui.reset;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SendViewModel extends ViewModel {
+public class ResetViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SendViewModel() {
+    public ResetViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is send fragment");
+        mText.setValue("This is Reset fragment");
     }
 
     public LiveData<String> getText() {

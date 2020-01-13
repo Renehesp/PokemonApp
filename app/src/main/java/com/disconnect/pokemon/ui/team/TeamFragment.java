@@ -1,4 +1,4 @@
-package com.disconnect.pokemon.ui.gallery;
+package com.disconnect.pokemon.ui.team;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,22 +14,22 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.disconnect.pokemon.R;
 
-public class GalleryFragment extends Fragment {
+public class TeamFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private TeamViewModel galleryViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
+                ViewModelProviders.of(this).get(TeamViewModel.class);
         View root = inflater.inflate(R.layout.fragment_team, container, false);
-        final TextView textView = root.findViewById(R.id.text_team);
-        galleryViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+//        final TextView textView = root.findViewById(R.id.text_team);
+//        galleryViewModel.getText().observe(this, new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
         return root;
     }
 }

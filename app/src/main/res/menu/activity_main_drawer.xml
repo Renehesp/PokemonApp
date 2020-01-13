@@ -12,26 +12,26 @@
             android:id="@+id/nav_team"
             android:icon="@drawable/ic_menu_team"
             android:title="@string/menu_team" />
-        <item
-            android:id="@+id/nav_bag"
-            android:icon="@drawable/ic_bag"
-            android:title="@string/menu_bag" />
-        <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_tools"
-            android:title="@string/menu_tools" />
+<!--        <item-->
+<!--            android:id="@+id/nav_bag"-->
+<!--            android:icon="@drawable/ic_bag"-->
+<!--            android:title="@string/menu_bag" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_tools"-->
+<!--            android:icon="@drawable/ic_tools"-->
+<!--            android:title="@string/menu_tools" />-->
     </group>
 
     <item android:title="Game">
         <menu>
-            <item
-                android:id="@+id/nav_save"
-                android:icon="@drawable/ic_save"
-                android:title="@string/menu_save" />
-            <item
-                android:id="@+id/nav_reset"
-                android:icon="@drawable/ic_reset"
-                android:title="@string/menu_reset" />
+<!--            <item-->
+<!--                android:id="@+id/nav_save"-->
+<!--                android:icon="@drawable/ic_save"-->
+<!--                android:title="@string/menu_save" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_reset"-->
+<!--                android:icon="@drawable/ic_reset"-->
+<!--                android:title="@string/menu_reset" />-->
         </menu>
     </item>
 

@@ -1,4 +1,4 @@
-package com.disconnect.pokemon.ui.send;
+package com.disconnect.pokemon.ui.reset;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,14 +14,14 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.disconnect.pokemon.R;
 
-public class SendFragment extends Fragment {
+public class ResetFragment extends Fragment {
 
-    private SendViewModel sendViewModel;
+    private ResetViewModel sendViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
+                ViewModelProviders.of(this).get(ResetViewModel.class);
         View root = inflater.inflate(R.layout.fragment_reset, container, false);
         final TextView textView = root.findViewById(R.id.text_reset);
         sendViewModel.getText().observe(this, new Observer<String>() {

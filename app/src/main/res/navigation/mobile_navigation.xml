@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/nav_team"
-        android:name="com.disconnect.pokemon.ui.gallery.GalleryFragment"
+        android:name="com.disconnect.pokemon.ui.team.TeamFragment"
         android:label="@string/menu_team"
         tools:layout="@layout/fragment_team" />
 
     <fragment
         android:id="@+id/nav_bag"
-        android:name="com.disconnect.pokemon.ui.slideshow.SlideshowFragment"
+        android:name="com.disconnect.pokemon.ui.bag.BagFragment"
         android:label="@string/menu_bag"
         tools:layout="@layout/fragment_bag" />
 
@@ -31,13 +31,13 @@
 
     <fragment
         android:id="@+id/nav_save"
-        android:name="com.disconnect.pokemon.ui.share.ShareFragment"
+        android:name="com.disconnect.pokemon.ui.save.SaveFragment"
         android:label="@string/menu_save"
         tools:layout="@layout/fragment_save" />
 
     <fragment
         android:id="@+id/nav_reset"
-        android:name="com.disconnect.pokemon.ui.send.SendFragment"
+        android:name="com.disconnect.pokemon.ui.reset.ResetFragment"
         android:label="@string/menu_reset"
         tools:layout="@layout/fragment_reset" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.disconnect.pokemon.ui.slideshow;
+package com.disconnect.pokemon.ui.save;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.disconnect.pokemon.R;
 
-public class SlideshowFragment extends Fragment {
+public class SaveFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private SaveViewModel shareViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_bag, container, false);
-        final TextView textView = root.findViewById(R.id.text_bag);
-        slideshowViewModel.getText().observe(this, new Observer<String>() {
+        shareViewModel =
+                ViewModelProviders.of(this).get(SaveViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_save, container, false);
+        final TextView textView = root.findViewById(R.id.text_save);
+        shareViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
